@@ -1,0 +1,103 @@
+body, p, li {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+form {
+  font-size: 12px;
+}
+
+aside {
+ color: white;
+}
+
+aside h1, aside h2, aside h3, aside h4, aside h5, aside h6 {
+ color: white;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid silver;
+  margin: 0.5em 0;
+  /*border-top: 1px solid rgba(255, 255, 255, 0.4);*/
+}
+
+.logo {
+}
+
+.fullWidth {
+   width: 100%;
+   margin-left: 0;
+   margin-right: 0;
+   max-width: none;
+}
+.l-box {
+    padding: 1em;
+}
+
+.header {
+  height: 106px;
+}
+
+ul.fitWidth, ul.fitHeight {
+  margin: 0;
+}
+
+.fitWidth, li.fitWidth {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.fitHeight, li.fitHeight {
+  padding-top: 0;
+  padding-bottom: 0;  
+}
+
+.button {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+ul.country-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.country-list > li {
+  text-decoration: uppercase;
+}
+
+ul.country-list > li > a {
+  color: #fff;
+  width: 100%;
+  line-height: 32px;
+  height: 32px;
+  display: block;
+  padding-left: 2em;
+}
+
+ul.country-list > li > a:hover {
+  background-color: #2ba6cb;
+  color: #fff;
+}
+
+.centered-image {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.centered-image > img {
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+    max-width: none;
+}
