@@ -15,23 +15,20 @@
 	<link rel="stylesheet" href="css/style.css">
 
   <script src="js/vendor/modernizr.js"></script>
-
-  <style type="text/css">
-    
-  </style>
 </head>
 <body>
-  <div id="page-wrapper" style="background: url(img/back-1.jpg) no-repeat; background-size: cover;">
-    <div class="row fullWidth" style="width: 1200px; background-color: #575852;">
-      <aside class="large-2 columns logo fitWidth">
-        <div class="l-box header fitWidth" style="text-align: center;">
-          <div style="position: relative; display: inline-block;">
-            <h1>Adventure</h1>
-            <span style="top: 48px; right: 1px; position: absolute;">.org.ua</span>
+  <div class="page-wrapper">
+    <div class="row fullWidth content-wrapper">
+      <aside class="medium-3 large-2 columns fitWidth">
+        <div class="l-box logo fitWidth">
+          <div>
+            <h2>Adventure</h2>
+            <span style="top: 40px; right: 1px; position: absolute;">.org.ua</span>
+            <span class="small-text">Блог прибацаних мандрівників =)</span>
           </div>
         </div>
 
-        <div class="about" style="height: 420px; background-color: #373832;">
+        <div class="about">
           <div class="l-box">
             <h3>Про нас</h3>
             <p>Blah-blah-blah...</p>
@@ -47,31 +44,33 @@
               <li><a href="#">Бельгія</a></li>
               <li><a href="#">Ісландія</a></li>
               <li><a href="#">Іспанія</a></li>
+              <li><a href="#">Україна</a></li>
               <li><a href="#">Франція</a></li>
             </ul>
         </div>
       </aside>
 
-      <div class="large-10 columns" style="background-color: #ffffff;">
+      <div class="medium-9 large-10 columns main-content-wrapper">
         <div class="row l-box header">
           <div class="large-12 columns">
-            <div class="right">
-              <a href="#" style="background-color: #bbb; display: inline-block; padding: 4px;"><img src="img/facebook.png" alt="Facebook"/></a>
-              <a href="#" style="background-color: #bbb; display: inline-block; padding: 4px;"><img src="img/twitter.png" alt="Twitter" /></a>
-              <a href="#" style="background-color: #bbb; display: inline-block; padding: 4px;"><img src="img/googleplus.png" alt="Google+" /></a>
-              <a href="#" style="background-color: #bbb; display: inline-block; padding: 4px;"><img src="img/rss.png" alt="Rss" /></a>
+            <div class="right social-icons">
+              <a href="#"><img src="img/facebook.png" alt="Facebook"/></a>
+              <a href="#"><img src="img/twitter.png" alt="Twitter" /></a>
+              <a href="#"><img src="img/googleplus.png" alt="Google+" /></a>
+              <a href="#"><img src="img/rss.png" alt="RSS" /></a>
             </div>
             <hr>
-            <a href="#" class="button tiny">Мандрівки</a>
+            <!--<a href="#" class="button tiny">Мандрівки</a>
             <a href="#" class="button tiny">Фото</a>
-            <a href="#" class="button tiny">Про нас</a>
+            <a href="#" class="button tiny">Поради</a>
+            <a href="#" class="button tiny">Культура</a>-->
 
-            <div class="large-6 columns fitWidth" style="float: right;">
+            <div class="large-6 columns fitWidth search-box">
               <form>
                 <div class="row">
                   <div class="large-12 columns">
                     <div class="row collapse">
-                      <div class="small-10 columns">
+                      <div class="small-10 large-5 large-offset-5 columns">
                         <input type="text" placeholder="Шукати...">
                       </div>
                       <div class="small-2 columns">
@@ -84,15 +83,17 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <section class="row">
           <div class="large-12 columns">
             <div class="row">
               <div class="large-12 columns">
-                <div class="row" style="background-color: #2ba6cb;">
-                  <div class="medium-6 large-8 columns fitWidth" style="height: 420px; overflow: hidden;">
-                    <img src="https://farm4.staticflickr.com/3898/14924726296_dd43ae48e3_z_d.jpg" alt="Grotagja cave" style="width: 100%;" />
+                <div class="row featured-article">
+                  <div class="medium-6 large-8 columns fitWidth image">
+                    <div class="centered-image">
+                      <img src="https://farm4.staticflickr.com/3898/14924726296_dd43ae48e3_z_d.jpg" alt="Grotagja cave" />
+                    </div>
                   </div>
-                  <div class="medium-6 large-4 columns" style="color: white; height: 100%;">
+                  <div class="medium-6 large-4 columns description">
                     <h3>Ісландські нотатки. Частина 1</h3>
                     <p>бла-бла-бла</p>
                     <a href="#" class="button">Читати далі...</a>
@@ -102,11 +103,23 @@
             </div>
             <div class="row">
               <div class="large-12 columns fitWidth">
-                <ul class="medium-block-grid-2 large-block-grid-3 fitWidth">
+                <ul class="medium-block-grid-2 large-block-grid-3 fitWidth articles">
                   <li class="fitWidth fitHeight">
-                    <div class="" style="height: 420px;">
-                      <div class="centered-image" style="height: 300px; overflow: hidden;">
-                        <img src="https://farm4.staticflickr.com/3856/14761082038_9bf8e4a9c3_z_d.jpg" alt="" style="height: 300px;" />
+                    <div>
+                      <div class="centered-image image">
+                        <img src="https://farm4.staticflickr.com/3856/14761082038_9bf8e4a9c3_z_d.jpg" alt="" />
+                      </div>
+                      <div class="l-box description">
+                        <span class="small-text">Ісландія</span>
+                        <h5>Ісландські нотатки. Частина 1</h5>
+                        <p>бла-бла-бла</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="fitWidth fitHeight">
+                    <div>
+                      <div class="centered-image image">
+                        <img src="https://farm4.staticflickr.com/3837/14757298121_634f51fa87_z_d.jpg" alt="" style="" />
                       </div>
                       <div class="l-box">
                         <span style="font-size: 0.8em;">Ісландія</span>
@@ -116,9 +129,9 @@
                     </div>
                   </li>
                   <li class="fitWidth fitHeight">
-                    <div class="" style="height: 420px;">
-                      <div class="centered-image" style="height: 300px; overflow: hidden;">
-                        <img src="https://farm4.staticflickr.com/3837/14757298121_634f51fa87_z_d.jpg" alt="" style="height: 300px;" />
+                    <div>
+                      <div class="centered-image image">
+                        <img src="https://farm3.staticflickr.com/2935/14388214838_e3e43e01d5_z_d.jpg" alt="" />
                       </div>
                       <div class="l-box">
                         <span style="font-size: 0.8em;">Ісландія</span>
@@ -128,9 +141,9 @@
                     </div>
                   </li>
                   <li class="fitWidth fitHeight">
-                    <div class="" style="height: 420px;">
-                      <div class="centered-image" style="height: 300px; overflow: hidden; text-align: center;">
-                        <img src="https://farm3.staticflickr.com/2935/14388214838_e3e43e01d5_z_d.jpg" alt="" style="height: 300px;" />
+                    <div>
+                      <div class="centered-image image">
+                        <img src="https://farm4.staticflickr.com/3867/14359603598_2250c85989_z_d.jpg" alt="" />
                       </div>
                       <div class="l-box">
                         <span style="font-size: 0.8em;">Ісландія</span>
@@ -140,9 +153,9 @@
                     </div>
                   </li>
                   <li class="fitWidth fitHeight">
-                    <div class="" style="height: 420px;">
-                      <div class="centered-image" style="height: 300px; overflow: hidden;">
-                        <img src="https://farm4.staticflickr.com/3867/14359603598_2250c85989_z_d.jpg" alt="" style="height: 300px;" />
+                    <div>
+                      <div class="centered-image image">
+                        <img src="https://farm4.staticflickr.com/3755/11092211346_f5034ce855_z_d.jpg" alt="" />
                       </div>
                       <div class="l-box">
                         <span style="font-size: 0.8em;">Ісландія</span>
@@ -152,21 +165,9 @@
                     </div>
                   </li>
                   <li class="fitWidth fitHeight">
-                    <div class="" style="height: 420px;">
-                      <div class="centered-image" style="height: 300px; overflow: hidden;">
-                        <img src="https://farm4.staticflickr.com/3755/11092211346_f5034ce855_z_d.jpg" alt="" style="height: 300px;" />
-                      </div>
-                      <div class="l-box">
-                        <span style="font-size: 0.8em;">Ісландія</span>
-                        <h5>Ісландські нотатки. Частина 1</h5>
-                        <p>бла-бла-бла</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="fitWidth fitHeight">
-                    <div class="" style="height: 420px;">
-                      <div class="centered-image" style="height: 300px; overflow: hidden;">
-                        <img src="https://farm4.staticflickr.com/3906/14905060620_6d5a638bed_z_d.jpg" alt="" style="height: 300px;" />
+                    <div>
+                      <div class="centered-image image">
+                        <img src="https://farm4.staticflickr.com/3906/14905060620_6d5a638bed_z_d.jpg" alt="" />
                       </div>
                       <div class="l-box">
                         <span style="font-size: 0.8em;">Ісландія</span>
@@ -179,7 +180,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </div>
   </div>

@@ -1,3 +1,9 @@
+body {
+  background: url(../img/back-1.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 body, p, li {
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
@@ -8,14 +14,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 form {
-  font-size: 12px;
+  font-size: 11px;
 }
 
-aside {
+aside, footer {
  color: white;
 }
 
-aside h1, aside h2, aside h3, aside h4, aside h5, aside h6 {
+aside h1, aside h2, aside h3, aside h4, aside h5, aside h6,
+footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
  color: white;
 }
 
@@ -26,7 +33,11 @@ hr {
   /*border-top: 1px solid rgba(255, 255, 255, 0.4);*/
 }
 
-.logo {
+footer hr {
+  border: none;
+  margin: 0.5em 0;
+  border-top: 1px solid #ccc;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .fullWidth {
@@ -37,10 +48,6 @@ hr {
 }
 .l-box {
     padding: 1em;
-}
-
-.header {
-  height: 106px;
 }
 
 ul.fitWidth, ul.fitHeight {
@@ -58,8 +65,77 @@ ul.fitWidth, ul.fitHeight {
 }
 
 .button {
-  font-size: 12px;
+  font-size: 11px;
   text-transform: uppercase;
+}
+
+/*  */
+.page-wrapper {
+}
+
+.content-wrapper {
+  max-width: 1200px; background-color: #575852;
+}
+
+.main-content-wrapper {
+  background-color: #ffffff;
+}
+
+.logo {
+  height: 118px;
+  text-align: center;
+}
+
+.logo > div {
+  position: relative; display: inline-block;
+}
+
+.about {
+  height: 420px; background-color: #373832;
+}
+
+.social-icons > a {
+  background-color: #bbb; display: inline-block; padding: 4px;
+}
+
+.search-box {
+   float: right;
+}
+
+.featured-article {
+  background-color: #2ba6cb;
+}
+
+.featured-article > .image {
+  height: 420px; overflow: hidden;
+}
+
+.featured-article > .image > div {
+  height: 420px;
+}
+
+.featured-article > .image > div > img {
+  height: 460px;
+}
+
+.featured-article > .description {
+  color: white; height: 100%;
+}
+
+.articles > li > div {
+  height: 420px;
+}
+
+.articles > li .image, .articles > li .image > img {
+  height: 300px;
+}
+
+article img:before {
+  content: "<div class='image-full'>";
+}
+
+article img:after {
+  content: "</div>";
 }
 
 ul.country-list {
@@ -94,10 +170,15 @@ ul.country-list > li > a:hover {
 
 .centered-image > img {
     position: absolute;
+    overflow: hidden;
     top: -9999px;
     bottom: -9999px;
     left: -9999px;
     right: -9999px;
     margin: auto;
     max-width: none;
+}
+
+.small-text {
+  font-size: 0.8em;
 }
